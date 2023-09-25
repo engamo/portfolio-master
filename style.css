@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+.grid-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 /span 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  /* width: 400px; */
+}
+.header2 {
+  grid-column: 2 /span 1;
+  grid-row: 1 /span 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+.header3 {
+  grid-column: 3 / span 1;
+  grid-row: 1 /span 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  /* height: 200px; */
+}
+
+.project-heading {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 500;
+}
+.project-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* .project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+} */
+
+.profile-img {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+}
+.profile--img {
+  width: 300px;
+  height: 250px;
+  border-radius: 12px;
+}
+.name-role {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.name {
+  color: #4F4F4F;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.role {
+  color:#828282;
+  font-size: 18px;
+  font-weight: 500;
+}
+.info {
+  margin-bottom: 30px;
+}
+.info i {
+  margin-right: 10px;
+}
+.email {
+  margin-bottom: 5px;
+}
+.description {
+  width: 80%;
+}
+.frontend {
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.skill {
+  color: #4F4F4F;
+  font-size: 16px;
+  font-weight: 500;
+}
+.skill-range-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skill-range {
+  width: 50%;
+  height: 9px;
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.skill-bar {
+  height: 100%;
+  width: 0;
+  background: #2F80ED;
+  border-radius: 5px;
+  transition: 1s;
+}
+.span-tech {
+  margin-bottom: 20px;
+}
+span {
+  color: #4F4F4F;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.project {
+  grid-column: 2 /span 2;
+  grid-row: 2 / span 1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.project-description {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+button {
+  padding: 10px 30px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+.demo-button {
+  background: #2F80ED;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.code-button {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+  font-size: 18px;
+  font-weight: 500;
+}
+.experience {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+
+}
+.experience-heading {
+  color: #4F4F4F;
+  font-size: 24px;
+  font-weight: 500;
+}
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 40px;
+}
+.experience-sub-container {
+  display: flex;
+  gap: 20px;
+}
+.company-logo {
+  width: 84px;
+  height: 84px;
+}
+.date {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.experience-role {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.experience-description {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* hobbies */
+.hobbies {
+  grid-column: 1 / span 1;
+  grid-row: 3 /span 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+.hobbies-heading {
+  color: #4F4F4F;
+  font-size: 24px;
+  font-weight: 500;
+}
+.hobbies-img {
+  width: 369px;
+  height: 139px;
+  border-radius: 12px;
+}
+.hobbies-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 26px;
+}
+.hobbies-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hobby {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hobby-description {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* blog */
+.blog {
+  grid-column: 2 /span 2;
+  grid-row: 3 / span 1;
+  /* padding: 20px; */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-heading {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 500;
+}
+.blog-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.blog-sub {
+  color: #E0E0E0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.blog-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.blog-description {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+.dev {
+  color: #2F80ED;
+  font-size: 16px;
+  font-weight: 500;
+}
