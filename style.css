@@ -102,6 +102,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  gap: 40px;
 }
 .skill-range {
   width: 50%;
@@ -125,6 +126,7 @@ span {
   font-weight: 500;
   margin-right: 10px;
 }
+/* project */
 .project {
   border-radius: 12px;
   display: flex;
@@ -177,6 +179,7 @@ span {
   font-weight: 500;
   margin-bottom: 40px;
 }
+/* buttons */
 button {
   padding: 10px 30px;
   border-radius: 12px;
@@ -197,6 +200,7 @@ button {
   font-size: 18px;
   font-weight: 500;
 }
+/* experience */
 .experience {
   padding: 20px;
   background: #fff;
@@ -346,10 +350,13 @@ a {
   text-decoration: none;
 }
 
+/* footer */
 footer {
   margin-top: 130px;
   text-align: center;
 }
+
+/* responsive  */
 @media (max-width: 1200px) {
   body {
     padding: 20px 20px 10px ;
@@ -357,16 +364,32 @@ footer {
   .flex-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .container1 {
     flex-direction: column;
     width: fit-content;
+    gap: 20px;
   }
   .container2 {
     flex-direction: column;
     width: fit-content;
-   
+    gap: 20px;
   }
+  .skills-design {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skill-range-container {
+    gap: 10px;
+  }
+  .header2 {
+    width: 100%;
+  }
+  .header3 {
+    width: 100%;
+  }
+  
   .project-item {
     align-items: center;
   }
