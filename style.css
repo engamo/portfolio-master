@@ -53,14 +53,6 @@ body {
   height: fit-content;
 }
 
-
-/* .project-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-} */
-
 .profile-img {
   width: 100%;
   height: 350px;
@@ -165,6 +157,7 @@ span {
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 30px;
 }
 .project-sub-item {
@@ -222,11 +215,14 @@ button {
 }
 .experience-sub-container {
   display: flex;
+  justify-content: space-between;
+  align-items: start;
   gap: 20px;
 }
 .company-logo {
   width: 84px;
-  /* height: 84px; */
+  background: #fff;
+  padding: 10px;
 }
 .date {
   color: #828282;
@@ -307,6 +303,7 @@ button {
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 30px;
 }
 .blog-text-container {
@@ -352,4 +349,31 @@ a {
 footer {
   margin-top: 130px;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  body {
+    padding: 20px 20px 10px ;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container1 {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .container2 {
+    flex-direction: column;
+    width: fit-content;
+   
+  }
+  .project-item {
+    align-items: center;
+  }
+  .blog-container {
+    align-items: center;
+  }
+  .demo-button {
+    margin-bottom: 10px;
+  }
 }
